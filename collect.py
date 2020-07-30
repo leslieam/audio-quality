@@ -1,14 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Collect data for testing 'perceived' audio quality
-#
-# References
-# https://www.quora.com/Is-there-an-objective-way-to-measure-sound-quality-Audio-community-often-cite-uneven-frequency-in-highs-mids-and-lows-as-poor-audio-quality-but-how-is-that-perceptually-negative-to-someone-who-listens-to-music?share=1
-# PESQ: https://en.wikipedia.org/wiki/Perceptual_Evaluation_of_Speech_Quality
-# POLQA: https://en.wikipedia.org/wiki/Perceptual_Objective_Listening_Quality_Analysis
+"""collect.py
 
-# Python Playing and Recording Sound
-# https://realpython.com/playing-and-recording-sound-python/#recording-audio
+Collect data for testing 'perceived' audio quality
+
+References
+- https://www.quora.com/Is-there-an-objective-way-to-measure-sound-quality-Audio-community-often-cite-uneven-frequency-in-highs-mids-and-lows-as-poor-audio-quality-but-how-is-that-perceptually-negative-to-someone-who-listens-to-music?share=1
+- http://www.bnoack.com/index.html?http&&&www.bnoack.com/audio/speech-level.html
+
+Testing Standards
+- PESQ: https://en.wikipedia.org/wiki/Perceptual_Evaluation_of_Speech_Quality
+- POLQA: https://en.wikipedia.org/wiki/Perceptual_Objective_Listening_Quality_Analysis
+
+Python Playing and Recording Sound
+- https://realpython.com/playing-and-recording-sound-python/#recording-audio
+
+"""
+
 import simpleaudio as sa
 import sounddevice as sd
 import wave
